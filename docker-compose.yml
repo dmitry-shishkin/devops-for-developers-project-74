@@ -1,5 +1,6 @@
 services:
   app:
+    platform: linux/amd64
     image: dmitryshishkin/devops-for-developers-project-74:latest
     build:
       context: .
