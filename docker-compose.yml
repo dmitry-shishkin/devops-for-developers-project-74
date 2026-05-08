@@ -9,4 +9,4 @@ services:
         - linux/arm64
     command: make test
     ports:
-      - "8000:8000"
+      - "8080:8080"
