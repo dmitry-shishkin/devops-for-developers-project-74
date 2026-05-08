@@ -19,8 +19,5 @@ jobs:
       - name: Запуск тестов
         run: make test
 
-      - name: Упаковка приложения
-        run: make dockerize
-
       - name: Публикация образа
         run: make publish

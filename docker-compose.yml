@@ -1,10 +1,12 @@
 services:
   app:
-    platform: linux/amd64
     image: dmitryshishkin/devops-for-developers-project-74:latest
     build:
       context: .
       dockerfile: Dockerfile.production
+      platforms:
+        - linux/amd64
+        - linux/arm64
     command: make test
     ports:
       - "8000:8000"
