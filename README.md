@@ -23,3 +23,5 @@ make test
 ## Что необходимо для работы
 
 - Docker 28+
+- Docker Compose 2+
+- Make
