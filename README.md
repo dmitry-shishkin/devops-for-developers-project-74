@@ -24,6 +24,13 @@ docker pull dmitryshishkin/devops-for-developers-project-74
 make install
 ```
 
+Также следует подготовить .env файл командой:
+
+```sh
+make env-prepare
+```
+
+
 ### Запуск в режиме разработки
 
 ```sh
@@ -40,13 +47,7 @@ make stop
 
 ## Запуск тестов
 
-Перед запуском тестов подготовьте .env файл командой:
-
-```sh
-make env-prepare
-```
-
-После этого можно запускать тесты:
+Тесты запускаются командой:
 
 ```sh
 make test

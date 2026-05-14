@@ -16,6 +16,9 @@ jobs:
           username: ${{ vars.DOCKER_USERNAME }}
           password: ${{ secrets.DOCKER_PASSWORD }}
 
+      - name: Подготовка env
+        run: make prepare-env
+
       - name: Запуск тестов
         run: make test
 
