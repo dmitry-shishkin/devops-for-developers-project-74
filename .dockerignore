@@ -1,1 +1,8 @@
+.git
 .env
+app/.env
+app/node_modules/
+app/.cache/
+app/.npm/
+app/dist/
+app/*.sqlite

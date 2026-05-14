@@ -11,8 +11,6 @@ services:
       DATABASE_PASSWORD: ${DATABASE_PASSWORD}
       DATABASE_PORT: ${DATABASE_PORT}
     command: make test
-    ports:
-      - "8080:8080"
     depends_on:
       db:
         condition: service_healthy
