@@ -16,11 +16,13 @@ jobs:
           username: ${{ vars.DOCKER_USERNAME }}
           password: ${{ secrets.DOCKER_PASSWORD }}
 
-      - name: Подготовка env
-        run: make prepare-env
-
       - name: Запуск тестов
-        run: make test
+        run: make test-ci
 
-      - name: Публикация образа
-        run: make publish
+      - name: Подготовка и публикация образа
+        uses: docker/build-push-action@v3
+        with:
+          context: .
+          file: Dockerfile.production
+          push: true
+          tags: dmitryshishkin/devops-for-developers-project-74:latest
