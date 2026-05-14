@@ -4,11 +4,11 @@
 
 Проект создан для контейнеризации приложения JS Fastify Blog.
 
-Подробней о работе этого проекта читайте в отдельном [./app/README.md](README.md).
+Подробней о работе этого проекта читайте в отдельном [README.md](./app/README.md).
 
 ## Использование
 
-Образ опубликован в [DockerHub](dmitryshishkin/devops-for-developers-project-74) 
+Образ опубликован в [DockerHub](https://hub.docker.com/repository/docker/dmitryshishkin/devops-for-developers-project-74) 
 
 Получение образа:
  
@@ -27,7 +27,7 @@ make install
 Также следует подготовить .env файл командой:
 
 ```sh
-make env-prepare
+make prepare-env
 ```
 
 

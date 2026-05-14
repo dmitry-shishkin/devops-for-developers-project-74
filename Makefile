@@ -2,7 +2,7 @@ install:
 	docker run --rm -it -w /app -v "$(PWD)/app:/app" node:20.20.2 make install
 
 prepare-env:
-	cd app && make prepare-env
+	cp -n .env.example .env
 
 test:
 	docker compose -f docker-compose.yml up --abort-on-container-exit --exit-code-from app
