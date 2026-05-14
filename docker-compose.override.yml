@@ -2,8 +2,8 @@ services:
   app:
     build:
       dockerfile: Dockerfile
-    environment:
-      NODE_ENV: development
+    env_file:
+      - app/.env
     command: make dev
     ports:
       - "8080:8080"
