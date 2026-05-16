@@ -2,6 +2,7 @@ services:
   app:
     build:
       dockerfile: Dockerfile
+      context: .
     command: make dev
     ports:
       - "8080:8080"

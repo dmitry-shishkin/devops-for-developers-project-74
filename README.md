@@ -34,7 +34,7 @@ make prepare-env
 ### Запуск в режиме разработки
 
 ```sh
-make dev
+make compose-dev
 ```
 
 Тестовое окружение открывается по адресу https://localhost/
@@ -42,7 +42,7 @@ make dev
 Остановка приложения:
 
 ```sh
-make stop
+make compose-stop
 ```
 
 ## Запуск тестов
@@ -50,7 +50,7 @@ make stop
 Тесты запускаются командой:
 
 ```sh
-make test
+make compose-test
 ```
 
 ## Что необходимо для работы
